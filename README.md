@@ -22,6 +22,22 @@ function handleFile(buffer) {
 
 ```
 
+This would generate the following output when the `fake.txt` file
+does not exist:
+
+```
+An error occured, exiting:  { [Error: ENOENT, open '/home/doehlman/code/DamonOehlman/quitter/examples/fake.txt']
+errno: 34,
+code: 'ENOENT',
+path: '/home/doehlman/code/DamonOehlman/quitter/examples/fake.txt' }
+```
+
+And if it did, this:
+
+```
+here is the data buffer:  <Buffer >
+```
+
 ## License(s)
 
 ### ISC
